@@ -30,7 +30,7 @@ contract Listener is UniswapV3Factory$OnCreatePoolFunction {
         external
         override
     {
-        emit PoolCreated(uint64(block.chainid), ctx.txn.call.callee, outputs.pool, inputs.tokenA, inputs.tokenB, inputs.fee +2 );
+        emit PoolCreated(uint64(block.chainid), ctx.txn.call.callee, outputs.pool, inputs.tokenA, inputs.tokenB, inputs.fee +3 );
     }
 }
 
